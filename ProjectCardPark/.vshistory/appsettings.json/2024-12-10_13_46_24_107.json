@@ -1,0 +1,12 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "ConnectionStrings": {
+    "ProjectCardParkContext": "Server=(localdb)\\mssqllocaldb;Database=ProjectCardParkContext-b05c1b7e-1ab0-469f-ac67-e3c563ffaa97;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}
