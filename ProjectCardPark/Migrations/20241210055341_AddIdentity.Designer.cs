@@ -249,7 +249,7 @@ namespace ProjectCardPark.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("SellerId")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")
@@ -336,7 +336,7 @@ namespace ProjectCardPark.Migrations
                     b.Property<string>("AddressTo")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("BuyerId")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedBy")
@@ -388,7 +388,7 @@ namespace ProjectCardPark.Migrations
                     b.Property<double>("Price")
                         .HasColumnType("float");
 
-                    b.Property<string>("SellerId")
+                    b.Property<string>("UserId")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UpdatedBy")

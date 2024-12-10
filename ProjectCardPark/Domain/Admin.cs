@@ -11,7 +11,7 @@
         {
             get; set;
         }
-        public string? SellerId { get; set; }
+        public string? UserId { get; set; }
         public Boolean Approval { get; set; }
     } 
 }

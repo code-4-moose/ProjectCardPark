@@ -5,7 +5,7 @@
         public string? AddressFrom { get; set; }
         public string? AddressTo { get; set; }
         public double DeliveryFee { get; set; }
-        public string? BuyerId { get; set; }
+        public string? UserId { get; set; }
 
     }
 }
