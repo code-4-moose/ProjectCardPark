@@ -7,7 +7,5 @@
         public string? UserId { get; set; }
         public string? CardId { get; set; }
         public string? CategoryId { get; set; }
-
-        public string? Desc { get; set; }
     }
 }
