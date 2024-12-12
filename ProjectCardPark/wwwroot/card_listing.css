@@ -1,5 +1,5 @@
 ﻿
-.card_listings {
+.card-listings {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Fixed 4 columns */
     gap: 20px; /* Even spacing between cards */
@@ -46,13 +46,24 @@
     height: 60%;
     width: 75%;
     border-radius: .5rem;
-    transition: .3s ease;
 }
 
 .card-img img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transition: .5s ease;
+}
+
+.card-img i {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .card-info {
@@ -101,13 +112,49 @@
 }
 
 /*Hover*/
-.card-img:hover {
+.card-img:hover img {
     transform: translateY(-5%);
+    opacity: 0.5;
+}
+
+.card-img:hover i {
+    opacity: 1;
 }
 
 .card-button:hover {
     border: 1px solid #ffcaa6;
     background-color: #32d34e;
+}
+
+.card-listings .popup-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.card-listings .popup-image span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+    z-index: 100;
+}
+.card-listings .popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
