@@ -1,0 +1,64 @@
+﻿body {
+}
+.container_1 {
+    height:200px;
+    width:100%;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color:white;
+}
+.profile_pic {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    background-color: #4caf50; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    text-align: center; 
+    border: 2px solid #000; 
+    position:relative;
+    left:0%;
+}
+.username{
+    position:relative;
+    top:-80%;
+    left:18%;
+}
+.user_desc{
+    position:relative;
+    top:-70%;
+    left:18%;
+}
+.user_joined_date{
+    position:relative;
+    top:-85%;
+    left:85%;
+}
+.user-rating {
+    position: relative;
+    top: -130%;
+    left: 87%;
+    display: flex;
+    justify-items: center;
+    gap: 7px;
+}
+.star_css {
+    padding: 6px
+}
+.container_2 {
+
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background-color: white;
+}
+hr{
+    visibility:hidden;
+}
