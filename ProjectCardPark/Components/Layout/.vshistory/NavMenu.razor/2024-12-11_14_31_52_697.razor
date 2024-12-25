@@ -24,15 +24,9 @@
         <AuthorizeView>
             <Authorized>
                 <li>
-                    <a href="Account/Profile">
-                        <span class="icon"><i class="fa-solid fa-user"></i></span>
-                        <span class="text">Profile</span>
-                    </a>
-                </li>
-                <li>
                     <a href="Account/Manage">
-                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                        <span class="text">Settings</span>
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="text">@context.User.Identity?.Name</span>
                     </a>
                 </li>
                 <li>
