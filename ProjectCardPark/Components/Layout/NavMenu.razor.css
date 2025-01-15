@@ -48,6 +48,17 @@
     font-weight: 600;
 }
 
+.sidebar ul li .add_listing {
+    margin-bottom: 20px;
+    border: solid 5px #2ac732;
+    background: #2ac732;
+}
+
+.sidebar ul li .add_listing:hover {
+    border: solid 5px #03830d;
+    background: #03830d;
+}
+
 .sidebar ul li:last-child {
     position: absolute;
     bottom: -20px;
