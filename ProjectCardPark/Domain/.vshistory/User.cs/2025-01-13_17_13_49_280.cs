@@ -8,6 +8,7 @@
         public double Stars { get; set; }
         public string? RatingId { get; set; }
         public Rating Rating { get; set; }
+        public string? ratingID { get; set; }
 
     }
 

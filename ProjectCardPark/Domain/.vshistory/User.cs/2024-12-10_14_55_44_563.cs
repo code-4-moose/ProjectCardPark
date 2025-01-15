@@ -7,8 +7,6 @@
         public int Contact { get; set; }
         public double Stars { get; set; }
         public string? RatingId { get; set; }
-        public Rating Rating { get; set; }
-
     }
 
 }
