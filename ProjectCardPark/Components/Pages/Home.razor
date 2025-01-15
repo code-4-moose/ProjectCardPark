@@ -1,6 +1,8 @@
 ﻿@page "/"
+@inject IJSRuntime JSRuntime
 
 <link rel="stylesheet" href="/card_listing.css" />
+
 
 <PageTitle>Home</PageTitle>
 
@@ -104,10 +106,9 @@
     <h1>CATEGORY</h1>
 </div>
 
-
 <script>
     document.querySelectorAll('.card-listings .card-img img').forEach(image => {
-        image.onclick = () =>{
+        image.onclick = () => {
             document.querySelector('.popup-image').style.display = 'block';
             document.querySelector('.popup-image img').src = image.getAttribute('src');
         }

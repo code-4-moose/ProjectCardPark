@@ -4,23 +4,11 @@
 <div class="sidebar">
     <ul>
         <li>
-            <a href="/" class="logo">
+            <a href="#" class="logo">
                 <span class="icon"><i class="fa-solid fa-diamond"></i></span>
                 <span class="text">CardPark</span>
             </a>
         </li>
-        <AuthorizeView>
-            <Authorized>
-                <li>
-                    <div class="add_listing">
-                        <a href="listings/create">
-                            <span class="icon"><i class="fa-solid fa-plus"></i></span>
-                            <span class="text">Add Listing</span>
-                        </a>
-                    </div>
-                </li>
-            </Authorized>
-        </AuthorizeView>
         <li>
             <a href="/Card_Listings">
                 <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -36,15 +24,9 @@
         <AuthorizeView>
             <Authorized>
                 <li>
-                    <a href="Account/Profile">
-                        <span class="icon"><i class="fa-solid fa-user"></i></span>
-                        <span class="text">Profile</span>
-                    </a>
-                </li>
-                <li>
                     <a href="Account/Manage">
-                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
-                        <span class="text">Settings</span>
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="text">@context.User.Identity?.Name</span>
                     </a>
                 </li>
                 <li>
